@@ -1,0 +1,172 @@
+/* Colors and Fonts */
+body {
+    background-color: rgb(230, 230, 230);
+    color: rgb(40, 40, 40);
+    font-family: Courier, monospace;
+    font-size: 18px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Main Container */
+#profile-container {
+    max-width: 800px;
+    width: 100%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Shared Section Styling */
+.section {
+    background-color: white;
+    border: 3px solid rgb(100, 100, 100);
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    max-width: 700px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+}
+
+/* Headers */
+h1, h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: green;
+    font-size: 50px;
+    font-weight: 700;
+}
+
+h2 {
+    color: rgb(100, 100, 100);
+    font-size: 30px;
+    font-weight: 300;
+}
+
+/* Profile Picture */
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-top: 10px;
+}
+
+/* Bio Section */
+#profile-bio {
+    margin-bottom: 20px;
+}
+
+/* Hobbies Section */
+#profile-hobbies {
+    background-color: #f9f9f9;
+    border: 2px solid rgb(100, 100, 100);
+}
+
+#profile-hobbies h2 {
+    margin-bottom: 20px;
+}
+
+.hobby h3 {
+    font-size: 24px;
+    color: green;
+}
+
+.hobby p {
+    margin-left: 10px;
+}
+
+/* Social Links Section */
+#profile-social ul {
+    list-style: none;
+    padding: 0;
+}
+
+#profile-social li {
+    display: inline;
+    margin: 0 10px;
+}
+
+/* Links */
+a {
+    color: seagreen;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    color: yellowgreen;
+}
+
+/* Paragraph Styling */
+p {
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    body {
+        padding: 10px; /* Reduce padding for smaller screens */
+    }
+
+    #profile-container {
+        padding: 15px; /* Less padding in the container */
+    }
+
+    h1 {
+        font-size: 36px; /* Smaller font size for h1 */
+    }
+
+    h2 {
+        font-size: 24px; /* Smaller font size for h2 */
+    }
+
+    .profile-pic {
+        width: 120px; /* Reduce profile picture size */
+        height: 120px;
+    }
+
+    p, .hobby p {
+        font-size: 16px; /* Smaller font size for paragraphs */
+    }
+
+    #profile-hobbies, #profile-social {
+        margin: 10px 0; /* Reduce margin for hobbies and social sections */
+    }
+
+    #profile-social li {
+        display: block; /* Stack social links on smaller screens */
+        margin: 5px 0; /* Space between links */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px; /* Further reduce font size for h1 */
+    }
+
+    h2 {
+        font-size: 20px; /* Further reduce font size for h2 */
+    }
+
+    .profile-pic {
+        width: 100px; /* Further reduce profile picture size */
+        height: 100px;
+    }
+}
+
+
+
+
